@@ -1,74 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chúc mừng 20/10 em Trang 💗</title>
+  <title>Chúc mừng 20/10 em Trang 💕</title>
   <style>
-    *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
-      color:#7d2148;background:linear-gradient(135deg,#ffe4ee,#fff7fb 55%,#ffeaf1);
-      display:flex;align-items:center;justify-content:center;padding:24px;overflow-x:hidden}
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #7d2148;
+      background: linear-gradient(135deg, #ffe4ee, #fff7fb 55%, #ffeaf1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      overflow-x: hidden;
+    }
+
     .card {
-  width: min(100%, 850px);
-  margin: 0 auto;
-  text-align: center;
-  background: #fff;
-  border-radius: 30px;
-  padding: 32px;
-  box-shadow: 0 18px 55px #b94e7926;
-}
-      border-radius:30px;padding:clamp(22px,5vw,44px);box-shadow:0 18px 55px #b94e7926}
-    .eyebrow{letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:#c45a83}
-    h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.15;margin:12px 0;color:#b52d63}
+      width: min(100%, 850px);
+      margin: 0 auto;
+      text-align: center;
+      background: #fff;
+      border-radius: 30px;
+      padding: clamp(22px, 5vw, 44px);
+      box-shadow: 0 18px 55px rgba(185, 78, 121, 0.15);
+    }
+
+    .eyebrow {
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: #c45a83;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      line-height: 1.15;
+      margin: 12px 0;
+      color: #b52d63;
+    }
+
     .gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin: 24px auto;
-  width: 100%;
-  max-width: 650px;
-}
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 24px auto;
+      width: 100%;
+      max-width: 650px;
+    }
 
-.gallery img {
-  display: block;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px #b5626330;
-}
+    .gallery img {
+      display: block;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(181, 45, 99, 0.2);
+    }
 
-@media (max-width: 600px) {
-  .card {
-    padding: 24px 16px;
-  }
+    .message {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
 
-  .gallery {
-    grid-template-columns: 1fr;
-  }
+    .signature {
+      font-weight: bold;
+      color: #b52d63;
+      margin-top: 15px;
+    }
 
-  .gallery img {
-    height: auto;
-    max-height: 500px;
-    object-fit: contain;
-  }
-}
-    <p>Gửi cô em gái đáng yêu 🌸</p>
-   <div class="gallery">
- <div class="gallery">
-  <img src="anh1.jpg.jpg" alt="Ảnh 1">
-  <img src="anh2.jpg.jpg" alt="Ảnh 2">
-  <img src="anh3.jpg.jpg" alt="Ảnh 3">
-  <img src="anh4.jpg.jpg" alt="Ảnh 4">
-</div>
-</div>
-    <div class="message">
-      Chúc em Trang ngày 20/10 thật vui vẻ, luôn mạnh khỏe,
-      hạnh phúc và gặp thật nhiều điều may mắn.
-      Mong em luôn tự tin, học tập thật tốt, giữ mãi nụ cười
-      và có thật nhiều khoảnh khắc đáng nhớ nhé! 💕
+    .hearts {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: #e25585;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 15px;
+    }
+
+    /* Định dạng cho màn hình điện thoại */
+    @media (max-width: 600px) {
+      .card {
+        padding: 24px 16px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        height: auto;
+        max-height: 400px;
+        object-fit: contain;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">Gửi cô em gái đáng yêu 🌸</p>
+    <h1>Chúc mừng 20/10 em Trang 💕</h1>
+
+    <div class="gallery">
+      <img src="anh1.jpg.jpg" alt="Ảnh 1">
+      <img src="anh2.jpg.jpg" alt="Ảnh 2">
+      <img src="anh3.jpg.jpg" alt="Ảnh 3">
+      <img src="anh4.jpg.jpg" alt="Ảnh 4">
     </div>
+
+    <div class="message">
+      Chúc em Trang ngày 20/10 thật vui vẻ, luôn mạnh khỏe, <br>
+      hạnh phúc và gặp thật nhiều điều may mắn. <br>
+      Mong em luôn tự tin, học tập thật tốt, giữ mãi nụ cười <br>
+      và có thật nhiều khoảnh khắc đáng nhớ nhé!
+    </div>
+
     <div class="signature">Chúc em luôn rạng rỡ như những đóa hoa 🌹</div>
     <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
     <div class="note">Một trang web nhỏ, gửi thật nhiều yêu thương.</div>
