@@ -21,21 +21,13 @@
       border-radius:30px;padding:clamp(22px,5vw,44px);box-shadow:0 18px 55px #b94e7926}
     .eyebrow{letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:#c45a83}
     h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.15;margin:12px 0;color:#b52d63}
-    .flower{font-size:2rem;margin:10px}
-    .portrait{display:block;width:min(100%,350px);max-height:520px;object-fit:cover;margin:22px auto;
-      border:7px solid white;border-radius:24px;box-shadow:0 12px 32px #b52d6330}
-    .message{font-size:1.08rem;line-height:1.9;max-width:570px;margin:0 auto}
-    .signature{font-size:1.15rem;font-weight:700;margin-top:22px;color:#b52d63}
-    .hearts{font-size:1.5rem;letter-spacing:.3em;margin-top:18px}
-    .note{font-size:.8rem;color:#a65b78;margin-top:25px}
-  </style>
-  .gallery {
+    .gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   margin: 24px auto;
   width: 100%;
-  max-width: 680px;
+  max-width: 650px;
 }
 
 .gallery img {
@@ -44,20 +36,56 @@
   height: 300px;
   object-fit: cover;
   border-radius: 16px;
-  box-shadow: 0 4px 12px #b52d6330;
+  box-shadow: 0 4px 12px #b5626330;
 }
 
 @media (max-width: 600px) {
   .card {
-    padding: 20px 14px;
+    padding: 24px 16px;
   }
 
   .gallery {
-    gap: 10px;
+    grid-template-columns: 1fr;
   }
 
   .gallery img {
-    height: 220px;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+  }
+}.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px auto;
+  width: 100%;
+  max-width: 650px;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px #b5626330;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 24px 16px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+  }
+}
   }
 }
 </head>
